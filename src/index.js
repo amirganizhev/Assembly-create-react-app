@@ -1,30 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const Header = () => {
+import Header from './components/header.js';
+import Form from './components/form.js';
+import Button from './components/button.js';
+
+const App = () => {
 	return (
-		<h1>Hello world</h1>
+		<div>
+			<Header />
+			<Form />
+			<Button />
+		</div>
 	)
 }
 
-const Form = () => {
-	return (
-		<input type="text" />
-	)
-}
-
-const Button = () => {
-	return (
-		<button>start</button>
-	)
-}
-
-const Component = () => {
-	<div>
-		<Header />
-		<Form />
-		<Button />
-	</div>
-}
-
-ReactDOM.render(<Component />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
