@@ -1,13 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const element = (
-	<div>
+const Header = () => {
+	return (
 		<h1>Hello world</h1>
-		<input type="text"></input>
+	)
+}
+
+const Form = () => {
+	return (
+		<input type="text" />
+	)
+}
+
+const Button = () => {
+	return (
 		<button>start</button>
-	</div>	
-);
+	)
+}
 
-ReactDOM.render(element, document.getElementById('root'));
+const Component = () => {
+	<div>
+		<Header />
+		<Form />
+		<Button />
+	</div>
+}
 
+ReactDOM.render(<Component />, document.getElementById('root'));
