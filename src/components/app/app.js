@@ -1,15 +1,19 @@
+import React, { Component } from 'react';
+
 import Header from '../header';
 import Form from '../form';
 import Button from '../button';
 
-const App = () => {
-	return (
-		<div>
-			<Header />
-			<Form />
-			<Button />
-		</div>
-	)
-}
+import './app.css';
 
-export default App;
+export default class App extends Component {
+	render() {
+		return (
+			<div>
+				<Header />
+				<Form />
+				<Button />
+			</div>
+		)
+	}
+}

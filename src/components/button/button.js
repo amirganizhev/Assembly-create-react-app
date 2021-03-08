@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import './button.css'
 
-const Button = () => {
-	return (
-		<button>start</button>
-	)
+export default class Form extends Component {
+	render() {
+		return (
+			<button>start</button>
+		)
+	}
 }
-
-export default Button;
