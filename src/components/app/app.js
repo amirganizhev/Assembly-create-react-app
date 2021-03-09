@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 
 import Header from '../header';
-import Form from '../form';
-import Button from '../button';
+import NavigationMenu from '../navigation-menu'
+import Russia from '../russia'
+import Britain from '../britain'
+import France from '../france'
+import Footer from '../footer'
 
 import './app.css';
 
@@ -11,8 +14,11 @@ export default class App extends Component {
 		return (
 			<div>
 				<Header />
-				<Form />
-				<Button />
+				<NavigationMenu />
+				<Russia />
+				<Britain />
+				<France />
+				<Footer />
 			</div>
 		)
 	}

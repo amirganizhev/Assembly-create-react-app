@@ -1,0 +1,16 @@
+body {
+	background-image: url(image/background.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	color: white;
+	font-family: history;
+	margin: 0px;
+	text-shadow: 1px 1px 7px black;
+}
+
+@font-face {
+    font-family: history;
+    src: url(fonts/history.ttf);
+}

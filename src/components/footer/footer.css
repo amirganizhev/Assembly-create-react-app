@@ -1,0 +1,10 @@
+footer {
+	border-top: 1px solid white;
+	margin-top: 25px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+footer p {
+	margin-right: 20%;
+}
