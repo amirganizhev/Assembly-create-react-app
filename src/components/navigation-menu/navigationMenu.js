@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import './navigationMenu.css'
 
@@ -7,9 +8,9 @@ export default class NavigationMenu extends Component {
 	render() {
 		return (
 			<nav>
-				<a href='#'>Россия</a>
-        <a href='#'>Великобритания</a>
-        <a href='#'>Франция</a>
+				<Link to='/'>Россия</Link>
+        <Link to='/britain'>Великобритания</Link>
+        <Link to='/france'>Франция</Link>
 			</nav>
 		)
 	}

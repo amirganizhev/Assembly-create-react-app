@@ -9,17 +9,21 @@ import Footer from '../footer'
 
 import './app.css';
 
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+
 export default class App extends Component {
 	render() {
 		return (
-			<div>
-				<Header />
-				<NavigationMenu />
-				<Russia />
-				<Britain />
-				<France />
-				<Footer />
-			</div>
+			<Router>
+				<div>
+					<Header />
+					<NavigationMenu />
+					<Route path="/" component={Russia} exact />
+					<Route path="/britain" component={Britain} />
+					<Route path="/france" component={France} />
+					<Footer />
+				</div>
+			</Router>
 		)
 	}
 }
